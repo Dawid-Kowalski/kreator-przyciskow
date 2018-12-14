@@ -3,47 +3,61 @@
 	<head>
 		<meta charset="utf-8">
 		<title>kreator przycisków</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
-
-		<label>podaj szerokość przycisku</label>
-		<input type = "number" min="1" value="100">
-
-		<label>podaj wysokość przycisku</label>
-		<input type = "number" min="1" value="50">
-
-		<label>wybierz kolor przycisku</label>
-		<input type = "color" value="#C0C0C0">
-
-		<label>wypisz tekst</label>
-		<input type = "text" value="przycisk">
-
-		<label>podaj szerokość obramowania</label>
-		<input type = "number" min="0" value="3">
-
-		<label>podaj zaokrąglenie przycisku</label>
-		<input type = "number" min="0" value="3">
-
-		<label>wybierz kolor czcionki</label>
-		<input type = "color" value="#000000">
-
-		<label>wybierz wielkość czcionki</label>
-		<input type = "number" value="12">
-
-		<label>wybierz padding</label>
-		<input type = "number" value="5">
-
-		<label>tekst wyśrodkowany</label>
-		<input type = "radio" name="centered" value="center" checked>tak
-		<input type = "radio" name="centered" value="left">nie
-
-		<label>button aktywnyy</label>
-		<input type = "radio" name="activ" value="true" checked>tak
-		<input type = "radio" name="activ" value="false">nie
-
-		<button type="button">twórz przycisk</button>
-
+		<div class="container">
+			<form>
+  				<div class="form-group">
+					<label>podaj szerokość przycisku</label>
+					<input type = "number" class="form-control" min="1" value="100">
+				</div>
+  				<div class="form-group">
+					<label>podaj wysokość przycisku</label>
+					<input type = "number" class="form-control" min="1" value="50">
+				</div>
+  				<div class="form-group">
+					<label>wybierz kolor przycisku</label>
+					<input type = "color" class="form-control" value="#C0C0C0">
+				</div>
+  				<div class="form-group">
+					<label>wypisz tekst</label>
+					<input type = "text" class="form-control" value="przycisk">
+				</div>
+  				<div class="form-group">
+					<label>podaj szerokość obramowania</label>
+					<input type = "number"class="form-control"  min="0" value="3">
+				</div>
+  				<div class="form-group">
+					<label>podaj zaokrąglenie przycisku</label>
+					<input type = "number" class="form-control" min="0" value="3">
+				</div>
+  				<div class="form-group">
+					<label>wybierz kolor czcionki</label>
+					<input type = "color" class="form-control" value="#000000">
+				</div>
+  				<div class="form-group">
+					<label>wybierz wielkość czcionki</label>
+					<input type = "number" class="form-control" value="12">
+				</div>
+  				<div class="form-group">
+					<label>wybierz padding</label>
+					<input type = "number" class="form-control" value="5">
+				</div>
+  				<div class="form-group">
+					<label>tekst wyśrodkowany</label>
+					<input type = "radio" name="centered" value="center" checked>tak
+					<input type = "radio" name="centered" value="left">nie
+				</div>
+  				<div class="form-group">
+					<label>button aktywnyy</label>
+					<input type = "radio" name="activ" value="true" checked>tak
+					<input type = "radio" name="activ" value="false">nie
+				</div>
+					<button type="button" class="btn btn-primary">twórz przycisk</button>
+			</form>
+		</div>
 	</body>
 </html>
