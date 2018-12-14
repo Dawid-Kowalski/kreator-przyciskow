@@ -12,49 +12,49 @@
 			<form>
   				<div class="form-group">
 					<label>podaj szerokość przycisku</label>
-					<input type = "number" class="form-control" min="1" value="100">
+					<input type = "number" class="form-control" min="1" value="100" id="button-width">
 				</div>
   				<div class="form-group">
 					<label>podaj wysokość przycisku</label>
-					<input type = "number" class="form-control" min="1" value="50">
+					<input type = "number" class="form-control" min="1" value="50" id="button-height">
 				</div>
   				<div class="form-group">
 					<label>wybierz kolor przycisku</label>
-					<input type = "color" class="form-control" value="#C0C0C0">
+					<input type = "color" class="form-control" value="#C0C0C0" id="button-color">
 				</div>
   				<div class="form-group">
 					<label>wypisz tekst</label>
-					<input type = "text" class="form-control" value="przycisk">
+					<input type = "text" class="form-control" value="przycisk" id="button-text">
 				</div>
   				<div class="form-group">
 					<label>podaj szerokość obramowania</label>
-					<input type = "number"class="form-control"  min="0" value="3">
+					<input type = "number"class="form-control"  min="0" value="1" id="button-border">
 				</div>
   				<div class="form-group">
 					<label>podaj zaokrąglenie przycisku</label>
-					<input type = "number" class="form-control" min="0" value="3">
+					<input type = "number" class="form-control" min="0" value="3" id="button-border-radius">
 				</div>
   				<div class="form-group">
 					<label>wybierz kolor czcionki</label>
-					<input type = "color" class="form-control" value="#000000">
+					<input type = "color" class="form-control" value="#000000" id="button-font-color">
 				</div>
   				<div class="form-group">
 					<label>wybierz wielkość czcionki</label>
-					<input type = "number" class="form-control" value="12">
+					<input type = "number" class="form-control" value="12" id="button-font-size">
 				</div>
   				<div class="form-group">
 					<label>wybierz padding</label>
-					<input type = "number" class="form-control" value="5">
+					<input type = "number" class="form-control" value="5" id="button-padding">
 				</div>
   				<div class="form-group">
 					<label>tekst wyśrodkowany</label>
 					<input type = "radio" name="centered" value="center" checked>tak
-					<input type = "radio" name="centered" value="left">nie
+					<input type = "radio" name="centered" value="left" id="button-left-center">nie
 				</div>
   				<div class="form-group">
 					<label>button aktywnyy</label>
 					<input type = "radio" name="activ" value="true" checked>tak
-					<input type = "radio" name="activ" value="false">nie
+					<input type = "radio" name="activ" value="false" id="button-disabled">nie
 				</div>
 					<button type="button" class="btn btn-primary" onclick="createButton();">twórz przycisk</button>
 			</form>
