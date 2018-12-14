@@ -14,9 +14,10 @@ function Button(width, height, background, text, border, borderRadius, fontColor
 
 Button.prototype = {
 	create: function() {
-		let container = document.getElementById("container");
 
-		takeDataforButtons();
+		let self = this;
+
+		let container = document.getElementById("container");
 
 		this.element = document.createElement("button");
 
@@ -32,14 +33,19 @@ Button.prototype = {
 		this.element.style.textAlign = buttonCentered;
 		this.element.disabled = buttonDisabled;
 
+		this.element.addEventListener('click', function() {
+			alert(self.text);
+		});
+
 		container.appendChild(this.element);
 	}
 }
 
 function createButton() {
-	let container = document.getElementById("container");
 
-	let button = new Button();
+	takeDataforButtons();
+
+	let button = new Button(buttonWitdh, buttonHeight, buttonBackgroundcolor, buttonText, buttonBorder, buttonBorderRadius, buttonFontColor, buttonFontSize,  buttonPadding, buttonDisabled, buttonCentered);
 	button.create();
 }
 
